@@ -28,23 +28,23 @@ function aircon_settings(mode) {
 function set_mode(mode){
   var payload;
 
-  if(mode == '0'){
+  if(mode == 'power-off'){
     payload ={
       "button": "power-off",
     };
-  } else if(mode == '1'){
+  } else if(mode == 'cool'){
     payload = {
       "button": "",
       "operation_mode": "cool",
       "temperature": "18"
     };
-  } else if(mode == '2'){
+  } else if(mode == 'warm'){
     payload = {
       "button": "",
       "operation_mode": "warm",
       "temperature": "23"
     };
-  } else if(mode == '3') {
+  } else if(mode == 'dry') {
     payload = {
       "button": "",
       "operation_mode": "dry",
